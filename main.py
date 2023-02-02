@@ -139,7 +139,7 @@ def commands(level):
             if u in bannedUsers:
                 uploadGJComment(un,pw,f"@{u}, Banned for Violation of Autoworks Rules.",perc,level)
             else:
-                uploadGJComment(un,pw,f"@{u}, /say | /yesOrNo | /hello | /cool | /poll | /talkingben | /ship",perc,level)
+                uploadGJComment(un,pw,f"@{u}, /say | /yesOrNo | /hello | /cool | /poll | /talkingben | /ship | /furry",perc,level)
         except:
             return
     elif(com.startswith("/h_info")):
@@ -236,6 +236,15 @@ def commands(level):
                 uploadGJComment(un,pw,f"@{u}, Banned for Violation of Autoworks Rules.",perc,level)
             else:
                 uploadGJComment(un,pw,f"@{u}, you got on the cruise and {bruh}",perc,level)
+        except:
+            return
+    elif(com.startswith("/furry")):
+        furrypercent = random.randint(0,100)
+        try:
+            if u in bannedUsers:
+                uploadGJComment(un,pw,f"@{u}, Banned for Violation of Autoworks Rules.",perc,level)
+            else:
+                uploadGJComment(un,pw,f"@{u}, you are {furrypercent}% a furry!",furrypercent,level)
         except:
             return
 
