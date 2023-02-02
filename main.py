@@ -238,7 +238,6 @@ def commands(level):
                 uploadGJComment(un,pw,f"@{u}, you got on the cruise and {bruh}",perc,level)
         except:
             return
-            elif(com.startswith("/ship")):
     elif(com.startswith("/furry")):
         furrypercent = random.randint(0,100)
         try:
